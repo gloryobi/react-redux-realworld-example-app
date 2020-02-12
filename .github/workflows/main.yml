@@ -12,7 +12,7 @@ jobs:
     - name: Set Configs
       run: |
            git config user.email "gloryobielodan@gmail.com"
-           git config user.name "Glory Obielodan"
+           git config user.name "gloryobi"
     - name: Compile
       run: npm install
     - name: Create Deploy Bundle
