@@ -9,6 +9,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Set Configs
+      run: |
+           git config user.email "gloryobielodan@gmail.com"
+           git config user.name "Glory Obielodan"
     - name: Compile
       run: npm install
     - name: Create Deploy Bundle
