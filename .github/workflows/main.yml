@@ -3,21 +3,15 @@ name: DEMO CI/CD
 on: [push]
 
 jobs:
-  Compile_And_Build:
+  Build_AND_Deploy:
 
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v2
-    - name: Install npm
+    - name: Compile
       run: npm install
     - name: Create Deploy Bundle
       run: npm run build
-  
-  Deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-    - uses: actions/checkout@v2
     - name: Deploy
       run: npm run deploy
