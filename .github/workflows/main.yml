@@ -13,7 +13,7 @@ jobs:
       run: |
            git config --global user.email "${{ secrets.GITHUB_EMAIL }}"
            git config --global user.name "${{ secrets.GITHUB_USERNAME }}"
-           git remote set-url origin https://git@github.com/${{ secrets.GITHUB_USERNAME }}/react-redux-realworld-example-app.git
+           git remote set-url origin https://{{ secrets.GITHUB_GH_PAGES_TOKEN }}@github.com/${{ secrets.GITHUB_USERNAME }}/react-redux-realworld-example-app.git
     - name: Compile
       run: npm install
     - name: Create Deploy Bundle
