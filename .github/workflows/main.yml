@@ -19,6 +19,4 @@ jobs:
     - name: Create Deploy Bundle
       run: npm run build
     - name: Deploy
-      run: |
-           npm run deploy
-           cat /home/runner/.npm/_logs/2020-02-12T04_47_56_268Z-debug.log
+      run: npm run deploy
