@@ -13,6 +13,7 @@ jobs:
       run: |
            git config user.email "${{ secrets.GITHUB_EMAIL }}"
            git config user.name "${{ secrets.GITHUB_USERNAME }}"
+           git config credential.helper wincred
     - name: Compile
       run: npm install
     - name: Create Deploy Bundle
