@@ -3,7 +3,7 @@ name: DEMO CI/CD
 on: [push]
 
 jobs:
-  Compile And Build:
+  Compile_And_Build:
 
     runs-on: ubuntu-latest
 
